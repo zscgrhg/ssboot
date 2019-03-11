@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 @Secured("ROLE_ADMIN")
 public class AdminController {
+
     @RequestMapping({"/admin", "/admin/index"})
     public String pub() {
         return "admin/index";
